@@ -450,39 +450,39 @@ static void onReshadePresent(effect_runtime* runtime)
 	// Numpad 7: previous compute shader
 	// Numpad 8: next compute shader
 	// Numpad 9: mark current compute shader as part of the toggle group
-	if(runtime->is_key_pressed(VK_NUMPAD1))
+	if(runtime->is_key_pressed(49))
 	{
 		g_pixelShaderManager.huntPreviousShader(runtime->is_key_down(VK_CONTROL));
 	}
-	if(runtime->is_key_pressed(VK_NUMPAD2))
+	if(runtime->is_key_pressed(50))
 	{
 		g_pixelShaderManager.huntNextShader(runtime->is_key_down(VK_CONTROL));
 	}
-	if(runtime->is_key_pressed(VK_NUMPAD3))
+	if(runtime->is_key_pressed(51))
 	{
 		g_pixelShaderManager.toggleMarkOnHuntedShader();
 	}
-	if(runtime->is_key_pressed(VK_NUMPAD4))
+	if(runtime->is_key_pressed(52))
 	{
 		g_vertexShaderManager.huntPreviousShader(runtime->is_key_down(VK_CONTROL));
 	}
-	if(runtime->is_key_pressed(VK_NUMPAD5))
+	if(runtime->is_key_pressed(53))
 	{
 		g_vertexShaderManager.huntNextShader(runtime->is_key_down(VK_CONTROL));
 	}
-	if(runtime->is_key_pressed(VK_NUMPAD6))
+	if(runtime->is_key_pressed(54))
 	{
 		g_vertexShaderManager.toggleMarkOnHuntedShader();
 	}
-	if(runtime->is_key_pressed(VK_NUMPAD7))
+	if(runtime->is_key_pressed(55))
 	{
 		g_computeShaderManager.huntPreviousShader(runtime->is_key_down(VK_CONTROL));
 	}
-	if(runtime->is_key_pressed(VK_NUMPAD8))
+	if(runtime->is_key_pressed(56))
 	{
 		g_computeShaderManager.huntNextShader(runtime->is_key_down(VK_CONTROL));
 	}
-	if(runtime->is_key_pressed(VK_NUMPAD9))
+	if(runtime->is_key_pressed(57))
 	{
 		g_computeShaderManager.toggleMarkOnHuntedShader();
 	}
